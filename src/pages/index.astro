@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import localBirdImage from '../../images/buddy-test-1.jpg';
 ---
 
 <!doctype html>
@@ -14,6 +15,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header />
 		<main>
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+      <image src={localBirdImage} alt="test123" />
 			<p>
 				Looking for a blog template with a bit more personality? Check out <a
 					href="https://github.com/Charca/astro-blog-template"
