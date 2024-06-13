@@ -4,7 +4,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { Image } from 'astro:assets';
-import localBirdImage from '../../images/buddy-test-1.jpg';
+import testImage from '../../public/buddy-test-1.jpg';
+
 ---
 
 <!doctype html>
@@ -16,7 +17,7 @@ import localBirdImage from '../../images/buddy-test-1.jpg';
 		<Header />
 		<main>
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-      <image src={localBirdImage} alt="test123" />
+      <Image src={testImage} alt="Test123" />
 			<p>
 				Looking for a blog template with a bit more personality? Check out <a
 					href="https://github.com/Charca/astro-blog-template"
